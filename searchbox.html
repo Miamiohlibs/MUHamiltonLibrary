@@ -1,5 +1,5 @@
 <nav>
-    <div class="nav nav-tabs gap-3 mx-2" id="nav-tab" role="tablist">
+    <div class="nav nav-tabs gap-2 mx-3" id="nav-tab" role="tablist">
         <button class="nav-link active border-secondary" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-books" type="button"
             role="tab" aria-controls="nav-books" aria-selected="true">Books &amp; More</button>
         <button class="nav-link border border-secondary" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-articles" type="button"
@@ -16,7 +16,7 @@
     <div class="tab-pane fade show active px-5 py-4 border border-secondary rounded-3" id="nav-books" role="tabpanel" aria-labelledby="nav-books-tab">
 
         <p>
-        <form action="https://search.ebscohost.com/login.aspx" method="get" onsubmit="ebscoPreProcess(this)" target="_blank" class="d-inline-flex col-12">
+        <form action="https://search.ebscohost.com/login.aspx" method="get" onsubmit="ebscoPreProcess(this)" target="_blank" class="d-inline-flex col-12 mb-2 gap-2">
             <input name="direct" type="hidden" value="true">
             <input name="scope" type="hidden" value="site">
             <input name="site" type="hidden" value="eds-live">
@@ -26,7 +26,7 @@
             <input name="profile" type="hidden" value="cat">
             <input name="bquery" type="hidden" value="">
             <label class="sr-only" for="book-search-query">Search for books and more</label>
-            <input class="ebsco-searchbox" id="book-search-query" name="uquery"
+            <input class="ebsco-searchbox flex-grow-1" id="book-search-query" name="uquery"
                 placeholder="Search for books, journal titles, movies, audio recordings, etc." size="35" type="text"
                 color="#000000">
             <label class="sr-only" for="book-search-type">Search type</label>
@@ -67,7 +67,7 @@
     <div class="tab-pane fade px-5 py-4 border border-secondary rounded-3" id="nav-articles" role="tabpanel" aria-labelledby="nav-articles-tab">
         <p>
         <form action="https://search.ebscohost.com/login.aspx" id="article-search-form" method="get"
-            onsubmit="ebscoPreProcess(this)" target="_blank" class="d-inline-flex col-12">
+            onsubmit="ebscoPreProcess(this)" target="_blank" class="d-inline-flex col-12 mb-2 gap-2">
             <input name="direct" type="hidden" value="true">
             <input name="scope" type="hidden" value="site">
             <input name="site" type="hidden" value="eds-live">
@@ -77,7 +77,7 @@
             <input name="profile" type="hidden" value="eds">
             <input name="bquery" type="hidden" value="">
             <label class="sr-only" for="article-search-field">Search for articles and more</label>
-            <input class="ebsco-searchbox" id="article-search-field" name="uquery"
+            <input class="ebsco-searchbox flex-grow-1" id="article-search-field" name="uquery"
                 placeholder="Search for articles,eBooks, media, and more..." size="35" type="text">
             <label class="sr-only" for="article-search-type">Search type</label>
             <select class="ebsco-dropdown" id="article-search-type" name="search_prefix" onchange="#" size="1">
@@ -121,7 +121,7 @@
             </div>
     
             <div class="eb-filter-container d-inline-flex gap-4 mt-2 mb-4 ms-2">
-                <fieldset class="eb-search__radio container gap-5 px-4 py-1"
+                <fieldset class="eb-search__radio d-inline-flex gap-5 px-3 py-1"
                     style="background-color: #f3f3f3; border-radius:10px;">
                     <label class="d-inline-flex eb-search__label eb-search__radio_label">
                         <input type="radio" name="resourceTypeOptionSelected" value=1,2,3,4,5,6,7,8,9,10,11,12,13,14
@@ -131,7 +131,7 @@
                         <input type="radio" name="resourceTypeOptionSelected" value=1 />Journals only
                     </label>
                 </fieldset>
-                <label style="background-color: #f3f3f3; border-radius:10px;" class="eb-search__label px-4 py-1"
+                <label style="background-color: #f3f3f3; border-radius:10px;" class="eb-search__label px-4 py-1 flex-grow-1"
                     for="peerReviewed">
                     <input class="eb-search__input" id="peerReviewed" name="isPeerReviewed" value="true" type="checkbox" />
                     <span class="eb-search__span">Peer reviewed (scholarly) only</span>
