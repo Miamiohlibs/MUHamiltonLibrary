@@ -1,4 +1,3 @@
-<script>
 /** ----------------------------------------------------------------
  * Table of Contents (Javascript):
  * 0.1 - AppendEmail
@@ -362,4 +361,3 @@ $('.list-unstyled li hr').each(function() {
   /* END FUNCTIONS */
 
 });
-</script>
