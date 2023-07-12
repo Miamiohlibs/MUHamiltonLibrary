@@ -1,0 +1,180 @@
+<nav>
+    <div class="nav nav-tabs gap-3 mx-2" id="nav-tab" role="tablist">
+        <button class="nav-link active border-secondary" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-books" type="button"
+            role="tab" aria-controls="nav-books" aria-selected="true">Books &amp; More</button>
+        <button class="nav-link border border-secondary" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-articles" type="button"
+            role="tab" aria-controls="nav-articles" aria-selected="false">Articles &amp; More</button>
+        <button class="nav-link border-secondary" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-ejournals" type="button"
+            role="tab" aria-controls="nav-ejournals" aria-selected="false">E-Journals by Title</button>
+        <button class="nav-link border-secondary" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-media" type="button"
+            role="tab" aria-controls="nav-media" aria-selected="false">Music, Video, &amp; Images</button>
+    </div>
+</nav>
+<div class="tab-content" id="nav-tabContent">
+
+    <!-- Books &amp; More -->
+    <div class="tab-pane fade show active px-5 py-4 border border-secondary rounded-3" id="nav-books" role="tabpanel" aria-labelledby="nav-books-tab">
+
+        <p>
+        <form action="https://search.ebscohost.com/login.aspx" method="get" onsubmit="ebscoPreProcess(this)" target="_blank" class="d-inline-flex col-12">
+            <input name="direct" type="hidden" value="true">
+            <input name="scope" type="hidden" value="site">
+            <input name="site" type="hidden" value="eds-live">
+            <input name="authtype" type="hidden" value="ip,guest">
+            <input name="custid" type="hidden" value="s9002963">
+            <input name="groupid" type="hidden" value="main">
+            <input name="profile" type="hidden" value="cat">
+            <input name="bquery" type="hidden" value="">
+            <label class="sr-only" for="book-search-query">Search for books and more</label>
+            <input class="ebsco-searchbox" id="book-search-query" name="uquery"
+                placeholder="Search for books, journal titles, movies, audio recordings, etc." size="35" type="text"
+                color="#000000">
+            <label class="sr-only" for="book-search-type">Search type</label>
+            <select class="ebsco-dropdown" id="book-search-type" name="search_prefix" onchange="#" size="1">
+                <option selected="selected" value="">Keyword</option>
+                <option value="TI ">Title</option>
+                <option value="AU ">Author</option>
+                <option value="SU ">Subject</option>
+            </select>
+            <input class="ebsco-button" name="submit" type="submit" value="Search">&nbsp;
+        </form>
+
+
+        <p><a href="https://www.ham.miamioh.edu/library/wp-content/uploads/Guide-to-the-New-Catalog-Interface-Fall-Semester-2015.pdf"
+                target="_blank" rel="noopener">Guide to Using the New Catalog</a><br>
+
+            More Options:&nbsp;&nbsp;<a class="tabs" href="https://holmes.lib.miamioh.edu/search" target="_blank"
+                rel="noopener">Classic Catalog</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a class="tabs"
+                href="http://catalog.ohiolink.edu/" target="_blank" rel="noopener">OhioLINK
+                (New)</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a class="tabs" href="https://olc1.ohiolink.edu/search/"
+                target="_blank" rel="noopener">OhioLINK (Classic)</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a
+                href="https://www.ham.miamioh.edu/library/start-researching/research-tips/finding-books/"
+                target="_blank" rel="noopener">Search Tips</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a
+                href="https://libguides.lib.miamioh.edu/worldcat" target="_blank" rel="noopener">WorldCat</a></p>
+
+        <script src="https://support.ebscohost.com/eit/scripts/ebscohostsearch.js" type="text/javascript"></script>
+        <script type="text/javascript">
+            //<![CDATA[
+            function ebscoPreProcess(myForm) {
+                myForm.bquery.value = myForm.search_prefix.value + myForm.uquery.value;
+            }
+	//]]&gt;
+        </script>
+
+    </div>
+
+    <!-- Articles &amp; More -->
+    <div class="tab-pane fade px-5 py-4 border border-secondary rounded-3" id="nav-articles" role="tabpanel" aria-labelledby="nav-articles-tab">
+        <p>
+        <form action="https://search.ebscohost.com/login.aspx" id="article-search-form" method="get"
+            onsubmit="ebscoPreProcess(this)" target="_blank" class="d-inline-flex col-12">
+            <input name="direct" type="hidden" value="true">
+            <input name="scope" type="hidden" value="site">
+            <input name="site" type="hidden" value="eds-live">
+            <input name="authtype" type="hidden" value="ip,guest">
+            <input name="custid" type="hidden" value="s9002963">
+            <input name="groupid" type="hidden" value="main">
+            <input name="profile" type="hidden" value="eds">
+            <input name="bquery" type="hidden" value="">
+            <label class="sr-only" for="article-search-field">Search for articles and more</label>
+            <input class="ebsco-searchbox" id="article-search-field" name="uquery"
+                placeholder="Search for articles,eBooks, media, and more..." size="35" type="text">
+            <label class="sr-only" for="article-search-type">Search type</label>
+            <select class="ebsco-dropdown" id="article-search-type" name="search_prefix" onchange="#" size="1">
+                <option selected="selected" value="">Keyword</option>
+                <option value="TI ">Title</option>
+                <option value="AU ">Author</option>
+                <option value="SU ">Subject</option>
+            </select>
+            <input class="ebsco-button" type="submit" value=" Search ">&nbsp;
+        </form>
+
+        <p>More Options:&nbsp;&nbsp;<a
+                href="https://www.ham.miamioh.edu/library/start-researching/research-by-subject-2/" target="_blank"
+                rel="noopener">Research by Subject</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a
+                href="https://www.ham.miamioh.edu/library/start-researching/research-databases/" target="_blank"
+                rel="noopener">Databases A-Z</a></p>
+        <p></p>
+
+
+    </div>
+
+    <!-- E-Journals by Title -->
+    <div class="tab-pane fade px-5 py-4 border border-secondary rounded-3" id="nav-ejournals" role="tabpanel" aria-labelledby="nav-ejournals-tab">
+
+        <p>
+    <form action="https://publications.ebsco.com/" target="_blank" class="ebsco-single-search">
+        <input name="custId" value="s9002934" type="hidden" />
+        <input name="groupId" value="main" type="hidden" />
+        <input name="profileId" value="pfui" type="hidden" />
+        <input name="orderBy" value="relevance" type="hidden" />
+    
+        <div class="eb-search-container eb-search-container__has-limiter eb-search">
+            <div class="eb-search__box d-inline-flex col-12">
+                <label class="visually-hidden" for="eb-sbb-search-input">Search journals &amp; more</label>
+                <input class="ebsco-searchbox form-control eb-search__input-bquery" id="eb-sbb-search-input" name="search"
+                    size="50" type="text" placeholder="Search journals & more" />
+                <label for="journal-search-button" class="visually-hidden">Submit</label>
+                <button id="journal-search-button" class="ebsco-button btn eb-search__submit-button" type="submit">
+                    <div class="eb-search__submit-text visually-hidden">Search</div>
+                </button>
+            </div>
+    
+            <div class="eb-filter-container d-inline-flex gap-4 mt-2 mb-4 ms-2">
+                <fieldset class="eb-search__radio container gap-5 px-4 py-1"
+                    style="background-color: #f3f3f3; border-radius:10px;">
+                    <label class="d-inline-flex eb-search__label eb-search__radio_label">
+                        <input type="radio" name="resourceTypeOptionSelected" value=1,2,3,4,5,6,7,8,9,10,11,12,13,14
+                            checked />All
+                    </label>
+                    <label class="d-md-inline-flex eb-search__label eb-search__radio_label">
+                        <input type="radio" name="resourceTypeOptionSelected" value=1 />Journals only
+                    </label>
+                </fieldset>
+                <label style="background-color: #f3f3f3; border-radius:10px;" class="eb-search__label px-4 py-1"
+                    for="peerReviewed">
+                    <input class="eb-search__input" id="peerReviewed" name="isPeerReviewed" value="true" type="checkbox" />
+                    <span class="eb-search__span">Peer reviewed (scholarly) only</span>
+                </label>
+                <a class="px-4 py-1"
+                    href="https://publications.ebsco.com/?custId=s9002934&groupId=main&profileId=pfui&lang=en"
+                    target="_blank">Browse
+                    Journals by Title or Subject</a>
+            </div>
+        </div>
+    </form>
+
+        <p>More Options:&nbsp;&nbsp; <a class="tabs" title="Goes offsite"
+                href="https://libguides.lib.miamioh.edu/online-journals-a-to-z" target="_blank" rel="noopener">Online
+                Journals: A-Z List</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a class="tabs" title="Goes offsite to DOAJ"
+                href="https://www.doaj.org/" target="_blank" rel="noopener">DOAJ: Open Access Journals</a></p>
+
+
+    </div>
+
+    <!-- Music, Video, &amp; Images -->
+    <div class="tab-pane fade px-5 py-4 border border-secondary rounded-3" id="nav-media" role="tabpanel" aria-labelledby="nav-media-tab">
+
+        <p>
+        <p><span style="color:#000">Images:&nbsp;&nbsp;<a class="tabs" href="https://libguides.lib.miamioh.edu/art-stor"
+                    title="Goes offsite to Art store database" target="_blank" rel="noopener">
+                    ARTstor</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a class="tabs" href="https://search.creativecommons.org/"
+                    title="Goes offsite to Creative Commons" target="_blank" rel="noopener">Creative Commons</a></span>
+        </p>
+        <p><span style="color:#000">Videos:</span>&nbsp;&nbsp;<a
+                href="https://libguides.lib.miamioh.edu/regionalstreaming/resources" target="_blank"
+                rel="noopener">Streaming Video Resources</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a
+                href="http://proxy.lib.miamioh.edu/login?url=https://fod.infobase.com/PortalPlayLists.aspx?wid=239637"
+                title="Goes offsite to Films on Demand" target="_blank" rel="noopener">Films on Demand</a></p>
+        <p><span style="color:#000">Music &amp; Sounds:&nbsp;&nbsp;<a class="tabs" href="https://freemusicarchive.org"
+                    title="Goes offsite to find audio/music in Public Domain" target="_blank" rel="noopener"> Free Music
+                    Archive</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a class="tabs" href="https://music.ohiolink.edu/"
+                    target="_blank" rel="noopener">OhioLINK Music Center</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a class="tabs"
+                    href="https://libguides.lib.miamioh.edu/database-recorded-american-music" target="blank"
+                    rel="noopener">Database of Recorded American Music (DRAM)</a></span></p>
+
+
+
+    </div>
+
+</div>
