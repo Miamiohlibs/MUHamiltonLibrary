@@ -1,3 +1,4 @@
+
 /** ----------------------------------------------------------------
  * Table of Contents (CSS):
  * 1.0 - Basic
@@ -9,7 +10,6 @@
  * 5.0 - A-Z Page
  * 6.0 - @media queries
  * 7.0 - LibChat
- * 8.0 -- @Fonts
  * -------------------------------------------------------------------
  */
 
@@ -68,12 +68,12 @@ a:hover {
 
 /** Headers */
 
-h1, h2 {
-  font-family: freight-text-pro, serif !important;
+h1 {
+  font-family: freight-display-pro, serif !important;
   color: #424242;
 }
 
-h3, h4, h5, h6 {
+h2, h3, h4, h5, h6 {
   font-family: proxima-nova, sans-serif !important;
   color: #424242;
 }
@@ -81,9 +81,9 @@ h3, h4, h5, h6 {
 h1#s-lg-guide-name,
 h1#s-lib-public-header-title {
   margin: 0 0 0em 0;
-  font-size: 3.5em;
+  font-size: 4.0em;
 font-weight: 300;
-  padding: 2.25em 0px 0.25em 0em;
+  padding: 2.25em 0px 0.125em 0em;
 }
 
 a.label-info {
@@ -206,7 +206,10 @@ div.s-lib-box {
 }
 
 #site-logo img {
-  margin: 0.5em 0 0 -1.5em;
+  width:450px; 
+  height: auto; 
+  margin: 0 0 0 -3.0em;
+padding: 0!important;
 }
 
 #main3nav {
@@ -330,9 +333,8 @@ div.s-lib-box {
     font-size: 20px;
   }
   #site-logo img {
-    width:250px; 
-    height: auto; 
-    margin: -0.75em 0 0 0;
+    
+    
   }
  #supernav {
     margin: 0;
@@ -349,9 +351,8 @@ div.s-lib-box {
     font-size: 23px;
   }
     #site-logo img {
-    width:300px; 
-    height: auto; 
-    margin: -0.5em 0 0 -2em;
+    
+    
    }
 }
 
@@ -360,8 +361,7 @@ div.s-lib-box {
     font-size: 24.8px;
   }
    #site-logo img {
-    width:375px; 
-    height: auto;
+    
    }
 }
 
@@ -686,8 +686,9 @@ a.s-lg-tab-drop.dropdown-toggle span.caret {
 div.s-lg-col-boxes h2.s-lib-box-title {
   display: block;
   margin: 0em 0 0 0;
-  padding: 0.5em 0px 0.5em 0.85em;
+  padding: 0.5em 0px 0.5em 0.75em;
   font-size: 1.75em;
+font-weight:700;
   background: #fff;
   color: #000;
 }
@@ -729,7 +730,7 @@ div#s-lg-box-19004034 h2 {
 }
 
 div.s-lib-box-content {
-  padding: 10px 20px;
+  padding: 20px 20px;
 }
 
 /*   ul#s-lg-page-prevnext.pager li.next a,
